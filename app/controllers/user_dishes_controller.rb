@@ -1,2 +1,0 @@
-class UserDishesController < ApplicationController
-end

@@ -1,2 +1,0 @@
-class EventDishesController < ApplicationController
-end

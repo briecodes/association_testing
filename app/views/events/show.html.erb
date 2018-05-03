@@ -1,0 +1,28 @@
+<h1> <%= @event.name %> </h1>
+
+<h3>Attendees:</h3>
+<ul>
+    <% @event.users.each do |user| %>
+        <li>
+            <%= link_to user.first_name + ' ' + user.last_name, user %>
+        </li>
+    <% end %>
+</ul>
+
+<h3>Allergens:</h3>
+<ul>
+    <% @event.allergies.uniq.each do |allergy| %>
+        <li>
+            <%= allergy.name %>
+        </li>
+    <% end %>
+</ul>
+
+<h3>Dishes Available:</h3>
+<ul>
+    <% @event.dishes.each do |dish| %>
+        <li>
+            <%= link_to dish.name, dish %>
+        </li>
+    <% end %>
+</ul>
