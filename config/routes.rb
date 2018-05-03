@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :event_dishes
+  resources :user_dishes
+  resources :user_allergies
   resources :events
   resources :dishes
   resources :allergies
