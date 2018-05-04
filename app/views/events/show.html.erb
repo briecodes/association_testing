@@ -26,3 +26,21 @@
         </li>
     <% end %>
 </ul>
+<br><br><br><br>
+
+<h4>Join the Party</h4>
+
+<%= form_for @user do |f| %>
+    <h5>Create a Profile or Select from Existing:</h5>
+    <%= f.hidden_field :event_id, :value => @event.id %>
+    <%= f.collection_select :id, @users, :id, :last_name, {:include_blank => 'Select User'} %><br><br>
+    
+    <%= f.label :first_name %>: <%= f.text_field :first_name %><br><br>
+    <%= f.label :last_name %>: <%= f.text_field :last_name %><br><br>
+
+    <%= f.submit %>
+
+<% end %>
+
+<br><br><br><br>
+<%= link_to "< All Events", events_path %>

@@ -12,17 +12,17 @@ User.create([
     {:first_name => "Bendydick", :last_name => "Krumpberbitch"}
   ])
 
+Dish.create([
+    {:name => "Pastas", :details => "My grandma’s famous recipe.", :user_id => 1, :event_id => 1 },
+    {:name => "Arroz Con Gandules", :details => "It is just rice n beans, man.", :user_id => 2, :event_id => 1 },
+    {:name => "Chicken Pot Pie", :details => "Kind of American, but whatever.", :user_id => 3, :event_id => 1 },
+    {:name => "Pizza", :details => "I have given up.", :user_id => 3, :event_id => 2 }
+])
+
 Allergy.create([
     {:name => "Nuts", :specifics => "Peanut, hazelnut, almonds."},
     {:name => "Lactose Intolerant", :specifics => "Cows milk, specifically."},
     {:name => "Strawberries", :specifics => "They’ll KILL me."}
-])
-
-Dish.create([
-    {:name => "Pastas", :details => "My grandma's famous recipe.", :user_id => 1, :event_id => 1 },
-    {:name => "Arroz Con Gandules", :details => "It is just rice n beans, man.", :user_id => 2, :event_id => 1 },
-    {:name => "Chicken Pot Pie", :details => "Kind of American, but whatever.", :user_id => 3, :event_id => 1 },
-    {:name => "Pizza", :details => "I have given up.", :user_id => 3, :event_id => 2 }
 ])
 
 Event.create([
